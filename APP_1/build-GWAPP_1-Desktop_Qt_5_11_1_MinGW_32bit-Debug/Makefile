@@ -216,6 +216,7 @@ Makefile: ../GWAPP_1/GWAPP_1.pro D:/QT/5.11.1/mingw53_32/mkspecs/win32-g++/qmake
 		D:/QT/5.11.1/mingw53_32/mkspecs/features/qt_config.prf \
 		D:/QT/5.11.1/mingw53_32/mkspecs/win32-g++/qmake.conf \
 		D:/QT/5.11.1/mingw53_32/mkspecs/features/spec_post.prf \
+		.qmake.stash \
 		D:/QT/5.11.1/mingw53_32/mkspecs/features/exclusive_builds.prf \
 		D:/QT/5.11.1/mingw53_32/mkspecs/features/toolchain.prf \
 		D:/QT/5.11.1/mingw53_32/mkspecs/features/default_pre.prf \
@@ -240,6 +241,7 @@ Makefile: ../GWAPP_1/GWAPP_1.pro D:/QT/5.11.1/mingw53_32/mkspecs/win32-g++/qmake
 		D:/QT/5.11.1/mingw53_32/mkspecs/features/lex.prf \
 		../GWAPP_1/GWAPP_1.pro \
 		D:/QT/5.11.1/mingw53_32/lib/qtmaind.prl \
+		D:/QT/5.11.1/mingw53_32/lib/Qt5PrintSupport.prl \
 		D:/QT/5.11.1/mingw53_32/lib/Qt5Widgets.prl \
 		D:/QT/5.11.1/mingw53_32/lib/Qt5Gui.prl \
 		D:/QT/5.11.1/mingw53_32/lib/Qt5Core.prl
@@ -399,6 +401,7 @@ D:/QT/5.11.1/mingw53_32/mkspecs/features/qt_functions.prf:
 D:/QT/5.11.1/mingw53_32/mkspecs/features/qt_config.prf:
 D:/QT/5.11.1/mingw53_32/mkspecs/win32-g++/qmake.conf:
 D:/QT/5.11.1/mingw53_32/mkspecs/features/spec_post.prf:
+.qmake.stash:
 D:/QT/5.11.1/mingw53_32/mkspecs/features/exclusive_builds.prf:
 D:/QT/5.11.1/mingw53_32/mkspecs/features/toolchain.prf:
 D:/QT/5.11.1/mingw53_32/mkspecs/features/default_pre.prf:
@@ -423,6 +426,7 @@ D:/QT/5.11.1/mingw53_32/mkspecs/features/yacc.prf:
 D:/QT/5.11.1/mingw53_32/mkspecs/features/lex.prf:
 ../GWAPP_1/GWAPP_1.pro:
 D:/QT/5.11.1/mingw53_32/lib/qtmaind.prl:
+D:/QT/5.11.1/mingw53_32/lib/Qt5PrintSupport.prl:
 D:/QT/5.11.1/mingw53_32/lib/Qt5Widgets.prl:
 D:/QT/5.11.1/mingw53_32/lib/Qt5Gui.prl:
 D:/QT/5.11.1/mingw53_32/lib/Qt5Core.prl:
