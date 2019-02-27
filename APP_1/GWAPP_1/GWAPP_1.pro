@@ -4,7 +4,7 @@
 #
 #-------------------------------------------------
 
-QT       += core gui widgets
+QT       += core gui widgets network
 
 TARGET = GWAPP_1
 TEMPLATE = app
@@ -28,7 +28,14 @@ SOURCES += \
     radiotools.cpp \
     radio.cpp \
     controller.cpp \
-    qcustomplot.cpp
+    qcustomplot.cpp \
+    application.cpp \
+    state.cpp \
+    painter.cpp \
+    groupbox.cpp \
+    radioviewer.cpp \
+    client.cpp \
+    clientpart.cpp
 
 HEADERS += \
         mainwidget.h \
@@ -36,10 +43,19 @@ HEADERS += \
     radiotools.h \
     radio.h \
     controller.h \
-    qcustomplot.h
+    qcustomplot.h \
+    application.h \
+    state.h \
+    painter.h \
+    groupbox.h \
+    radioviewer.h \
+    client.h \
+    clientpart.h
 
 FORMS += \
-        mainwidget.ui
+        mainwidget.ui \
+    groupbox.ui \
+    radioviewer.ui
 
 # Default rules for deployment.
 qnx: target.path = /tmp/$${TARGET}/bin

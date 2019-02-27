@@ -1,6 +1,7 @@
 #ifndef RADIOTOOLS_H
 #define RADIOTOOLS_H
 #include "G35DDCAPI.h"
+#include "QDebug"
 namespace radioTools {
 //API
 extern HMODULE hAPI;
@@ -28,5 +29,7 @@ extern COH_G35DDC_START_DDC1 CohStartDDC1;
 extern COH_G35DDC_STOP_DDC1 CohStopDDC1;
 //callbacks
 extern COH_G35DDC_SET_CALLBACKS CohSetCallbacks;
+
+
 }
 #endif // RADIOTOOLS_H
