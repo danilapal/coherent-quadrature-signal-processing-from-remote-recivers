@@ -29,7 +29,8 @@ SOURCES += \
     qcustomplot.cpp \
     controller.cpp \
     radio.cpp \
-    radiotools.cpp
+    radiotools.cpp \
+    ringbuffer.cpp
 
 HEADERS += \
         widget.h \
@@ -37,7 +38,8 @@ HEADERS += \
     controller.h \
     G35DDCAPI.h \
     radio.h \
-    radiotools.h
+    radiotools.h \
+    ringbuffer.h
 
 FORMS += \
         widget.ui

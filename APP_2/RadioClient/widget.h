@@ -4,6 +4,10 @@
 #include <QWidget>
 #include <controller.h>
 #include <QTcpSocket>
+#include <QMutex>
+#include <QWaitCondition>
+#include <QReadLocker>
+#include <QWriteLocker>
 namespace Ui {
 class Widget;
 }
@@ -26,7 +30,6 @@ private slots:
     void on_stopDDCButtton_clicked();
     void on_FreqSiftCenter_editingFinished();
     void on_Bitper_editingFinished();
-
     void on_checkbotton_clicked();
     void sockReady();
     void sockDisc();
@@ -41,7 +44,14 @@ private:
     QTcpSocket* socket;
     QByteArray Data;
     G3XDDCAPI_CREATE_INSTANCE createInstance();
-
+    QMutex Mutex;
+    QReadWriteLock mutex;
+    QWaitCondition notEmpty;
+    void setupPlot();
+public slots:
+    void testslot() ;
+signals:
+    void testsignal();
 
 };
 
